@@ -1,32 +1,209 @@
 .App {
   text-align: center;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Window{
+  border: 2px solid #000000;
+  background: #7f8a8f;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+ }
+ 
+ .CoolStuff {
+  background: lightcyan;
+  border: 1px solid teal;
+  height: 80%;
+  display:flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+#Stars{
+  position: relative;
+  height: 300px;
+  width: 600px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  background:#bcc3c6;
+  color: #dbdee0;
+  border-radius: 6px;
+  -moz-box-shadow: 0 0 5px 5px #535d63;
+  -webkit-box-shadow: 0 0 5px 5px #535d63;
+  box-shadow: 0 0 2px 2px  #535d63;
+}
+.ControlPanel{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-bottom: 2rem;
+  margin-top: 10px;
+  
+}
+.TimeDisplay{
+  
+  display: block;
+  height: 60px;
+  position: relative;
+  width: 55%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  color: whitesmoke;
+  font-size: 45px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.TimeDisplay div{
+  display: inline;
+  position:relative; 
+  /* border: 1px solid burlywood; */
+  }
+ 
+  .HR  {
+    font-size: 45px;
+    font-weight: 600;
+    min-width: 20vw;
+  }
+  .MI{
+    font-size: 45px;
+    font-weight: 600;
+    min-width: 20vw;
+  }
+  .SE {
+    font-size: 15px;
+    width: 20%;
+  }
+  .format12{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .Message {
+    width: 100%;
+    font-size: 5px;
+    position: relative;
+  }
+
+  #number-input{
+    display: flex;
+    position: relative;
+    margin:auto;
+    width: 25%;
+    justify-content: center;
+    padding: 10px;
+  }
+  #input{
+    display: flex;
+    width: 22%;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    height: 30%;
+    font-weight: 400;
+    font-size: 40px;
+    color: #dbdee0;
+    border-radius: 6px;
+    }
+
+  .shadow {
+    -moz-box-shadow:    inset 0 0 10px #535d63;
+    -webkit-box-shadow: inset 0 0 10px #535d63;
+    box-shadow:         inset 0 0 10px #535d63;
+ }
+  
+
+  
+.button{
+margin:auto;
+color: #dbdee0;
+text-transform: uppercase;
+background: #5b666d;
+padding: 10px;
+border-radius: 6px;
+display: inline-block;
+padding: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.counter{
+  width: 40px;
+  height: 40px;
+  border-radius: 45px;
+  font-weight: 600;
+  font-size: 2rem;
+  align-items: center;
+  box-shadow: rgba(173, 176, 178,0.8)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover{
+-moz-box-shadow: 0 0 5px 5px #dbdee0;
+-webkit-box-shadow: 0 0 5px 5px #dbdee0;
+box-shadow: 0 0 2px 2px  #dbdee0;
+cursor: pointer;
 }
+
+#hour-type{
+  /* width: 4rem; */
+  border-radius: 3px;
+  background:  #7f8a8f;
+  font-size: 1rem;
+  font-weight: 300;
+  display: inline;
+  color:#dbdee0;
+  font-weight: 600;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#hourCounter{
+  padding:5px;
+  margin: 5px;
+}
+
+#userHour{
+
+font-weight: 600;
+color:#dbdee0;
+}
+/* #UserInputDisplay{
+  display:flex;
+  position:relative;
+  background: #5b666d;
+  color: #d4d6d8;
+  font-size: 30px;
+  font-weight: 400px;
+  margin: 5px;
+} */
+
+#options{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-content: space-between;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #dbdee0;
+  }
+  #arrow{
+    display: block;
+    height: 60px;
+    margin:auto;
+  }
+  #options span{
+    line-height: 1.5;
+  }
+#switcher{
+  margin:auto 5px;
+  padding: 5px;
+  font-size: 30px;
+  
+}
+
+
+
+
