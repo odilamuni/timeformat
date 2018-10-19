@@ -2,6 +2,9 @@ import React from 'react';
 // import {styleTest} from './StyleTest';
 import {ICONARRAY} from './IconArray';
 
+
+
+
 export const CoolStuff = (props)=>{
 
 let hour;
@@ -12,6 +15,7 @@ let hourToDisplay;
 if(!interactivity){
 hour=props.hour;
 hourToDisplay=ICONARRAY[hour];
+
 return (
     <div id='Stars' >
     <img id='imgDisplayed' src={hourToDisplay} alt="Sun or moon"/>
@@ -19,7 +23,7 @@ return (
     );
 }else{
 hour=props.userInput;
-// hourToDisplay=ICONARRAY[hour];
+
     if(((hourType==="AM")||(hourType==="PM"))&&((hour>12)||(hour<1))){
         
         return<div>Oops</div>;
@@ -44,6 +48,7 @@ hour=props.userInput;
         <div id='Stars'>
             
             <img  id='imgDisplayed' src={hourToDisplay} alt="Sun or moon"/>
+            
             
         </div>
     );

@@ -8,6 +8,7 @@ import { HourCounter } from './hourCounter';
 import {UserInputDisplay}from './UserInputDisplay';
 
 
+
 class TimeNow extends React.Component{
     constructor(props){
         super(props);
@@ -45,7 +46,7 @@ componentDidMount() {
       dateTime: new Date(),
       hour: this.state.dateTime.getHours()
     });
-    console.log(this.state.interactive)
+    // console.log(this.state.interactive)
   }
 onClick(){
   var format = !this.state.displayedFormat;
@@ -65,20 +66,20 @@ this.setState({
 onStepUp(){
   this.setState(
     { userInput: +this.state.userInput+1 },
-  ()=>console.log('userInput2 is '+ this.state.userInput)
+  // ()=>console.log('userInput2 is '+ this.state.userInput)
     );
   }
 
 onStepDown(){
     this.setState(
     { userInput: +this.state.userInput-1 },
-  ()=>console.log('userInput2 is '+ this.state.userInput)
+  // ()=>console.log('userInput2 is '+ this.state.userInput)
     );
   }
 onChangeType(type){
     this.setState(
       {hourType: type},
-      ()=>console.log('Hour type '+ this.state.hourType)
+      // ()=>console.log('Hour type '+ this.state.hourType)
       );
 }
 onDisplay(user){
@@ -106,6 +107,7 @@ userHour: user
                     <Switcher onSwitcher={this.onSwitcher} text={this.state.interactive}/>
               </div>
           </div>
+        
       </div>
     );
   }
