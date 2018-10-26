@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Toggle between **AM/PM** or **24-hour***\(\*\)* notation format to see current time or pick a specific time you need.
+Toggle between **AM/PM** or **24-hour**\* notation format to see current time or pick a specific time you need.
 Visual analog data (sun and moon icons) complete the "time translation".
 
 Learn more about differences in time notation:
