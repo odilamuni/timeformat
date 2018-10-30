@@ -57,7 +57,7 @@ onSwitcher(){
 var interactive = !this.state.interactive;
 this.setState({
   interactive: interactive,
-  userInput: 0,
+  userInput: 1,
   })
 }
 
@@ -86,7 +86,8 @@ onStepUp(){
                 );
             }
     }else{ //diff hour type
-            if(userInput === 0){ // no 0 in AM PM, so set to 1
+            if(this.state.hourType !== '24'){
+              if(userInput === 12){ // no 0 in AM PM, so set to 1
               this.setState(
               { userInput: 1 },
               );
@@ -100,7 +101,9 @@ onStepUp(){
                   );
                 }
             }
-      }
+          }
+        }
+      
     
   
 
