@@ -25,11 +25,12 @@ render (){
                 display={display: 'flex'};
             }
      return (
-        <form style={display} className="Form" onClick = {this.handleClick}>
+         //this.handleClick on label prevents user to toggle clicking everywhere on the form
+        <form style={display} className="Form">
         <span className = "format">24</span>
-         <label className="switch">
+         <label className="switch" onClick = {this.handleClick}>
          <input id="option" value={24} type="checkbox"/>
-         <span className="slider round"></span>
+         <span className="slider round" ></span>
          </label>
         <span className = "format">AM/PM</span>
     </form>

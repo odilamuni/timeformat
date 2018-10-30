@@ -8,7 +8,6 @@ import { HourCounter } from './hourCounter';
 import {UserInputDisplay}from './UserInputDisplay';
 
 
-
 class TimeNow extends React.Component{
     constructor(props){
         super(props);
@@ -17,7 +16,7 @@ class TimeNow extends React.Component{
         dateTime: new Date(),
         displayedFormat: '24',
         hour: '',
-        userInput: 0,
+        userInput: 1,
         interactive: false,
         hourType: '24',
         userHour:''
@@ -62,32 +61,105 @@ this.setState({
   })
 }
 
+addOne(x){
+  return x+1;
+}
+substractOne(x){
+  return x-1;
+}
+
 
 onStepUp(){
-  this.setState(
-    { userInput: +this.state.userInput+1 },
-  // ()=>console.log('userInput2 is '+ this.state.userInput)
-    );
-  }
+  let userInput = this.state.userInput;
+   if (this.state.hourType === '24'){
+            if(userInput===23){//next click should go back to 0
+              this.setState(
+                { userInput: 0 },
+                );
+            }else if((userInput >= 0)&&(userInput<23)){ //between 0 and 22 next click adds 1
+              this.setState(
+                { userInput: this.addOne(userInput) },
+                );
+            }else{
+              this.setState( //any other option goes back to 0
+                { userInput: 0 },
+                );
+            }
+    }else{ //diff hour type
+            if(userInput === 0){ // no 0 in AM PM, so set to 1
+              this.setState(
+              { userInput: 1 },
+              );
+            }else if((userInput > 0 )&&(userInput<12)){  //between 1 and 11, next click adds 1
+                    this.setState(
+                  { userInput: this.addOne(userInput) },
+                  );
+            }else{
+                  this.setState( //any other option goes back to 1
+                    {userInput: 1}
+                  );
+                }
+            }
+      }
+    
+  
 
 onStepDown(){
-    this.setState(
-    { userInput: +this.state.userInput-1 },
-  // ()=>console.log('userInput2 is '+ this.state.userInput)
-    );
+  let userInput = this.state.userInput;
+  let hourType = this.state.hourType;
+
+  if (hourType === '24'){
+        if(userInput === 0){//next click should go back to 0 to avoid negative num
+              this.setState(
+                { userInput: 23 },
+                );
+        }else if((userInput > 0)&&(userInput <= 23)){ //between 1 and 23 next click substracts 1
+              this.setState(
+                { userInput: this.substractOne(userInput) },
+                );
+        }
+
+  }else if(hourType !== '24'){
+      if(userInput < 1){ 
+              this.setState(
+              { userInput: 1 },
+              );
+      }else if (userInput === 1){
+      this.setState(
+        { userInput: 12 },
+        );
+      }else if((userInput > 1 )&&(userInput <= 12)){  //between 2 and 12, next click substracts 1
+                      this.setState(
+                    { userInput: this.substractOne(userInput) },
+                    );
+      }else{
+                      this.setState( //any other option goes back to 1
+                        {userInput: 1}
+                      );
+      }
+  }else{
+    return
   }
+}
+            
+  
+
 onChangeType(type){
     this.setState(
       {hourType: type},
       // ()=>console.log('Hour type '+ this.state.hourType)
       );
 }
+
+
 onDisplay(user){
 this.setState({
 userHour: user
 });
 }
-  render() {
+
+
+render() {
     
     return (
       //app div ->

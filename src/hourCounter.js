@@ -32,6 +32,7 @@ constructor(props){
         <div id="hourCounter" style={display}>
             <div id="number-input">
                 <div className="button counter"  onClick={this.props.onStepDown}><span>-</span></div>
+                
                 <div className="shadow" id="input"  value={this.props.userInput} type="number">{this.props.userInput}:00</div>
                 
                 <div id="options">
