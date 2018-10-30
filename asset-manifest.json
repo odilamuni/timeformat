@@ -1,7 +1,7 @@
 {
   "main.css": "/timeformat/static/css/main.a8fc122b.chunk.css",
-  "main.js": "/timeformat/static/js/main.8199ae24.chunk.js",
-  "main.js.map": "/timeformat/static/js/main.8199ae24.chunk.js.map",
+  "main.js": "/timeformat/static/js/main.073fe3b8.chunk.js",
+  "main.js.map": "/timeformat/static/js/main.073fe3b8.chunk.js.map",
   "static/js/1.b51cc550.chunk.js": "/timeformat/static/js/1.b51cc550.chunk.js",
   "static/js/1.b51cc550.chunk.js.map": "/timeformat/static/js/1.b51cc550.chunk.js.map",
   "runtime~main.js": "/timeformat/static/js/runtime~main.81549b39.js",
@@ -26,6 +26,6 @@
   "static/media/Sun-19_moon-19.png": "/timeformat/static/media/Sun-19_moon-19.a9ee3423.png",
   "static/css/main.a8fc122b.chunk.css.map": "/timeformat/static/css/main.a8fc122b.chunk.css.map",
   "index.html": "/timeformat/index.html",
-  "precache-manifest.d69a1a069b66e2e78f7354a418195e11.js": "/timeformat/precache-manifest.d69a1a069b66e2e78f7354a418195e11.js",
+  "precache-manifest.2627ccfa06b1e12752573831149d8630.js": "/timeformat/precache-manifest.2627ccfa06b1e12752573831149d8630.js",
   "service-worker.js": "/timeformat/service-worker.js"
 }

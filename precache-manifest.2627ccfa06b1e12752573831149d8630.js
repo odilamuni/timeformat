@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/timeformat/static/media/Sun-8.8e8586f5.png"
   },
   {
-    "revision": "8199ae24a7c707f227fa",
+    "revision": "073fe3b8441ca7ef5bda",
     "url": "/timeformat/static/css/main.a8fc122b.chunk.css"
   },
   {
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/timeformat/static/media/Sun-7.ad9beea7.png"
   },
   {
-    "revision": "8199ae24a7c707f227fa",
-    "url": "/timeformat/static/js/main.8199ae24.chunk.js"
+    "revision": "073fe3b8441ca7ef5bda",
+    "url": "/timeformat/static/js/main.073fe3b8.chunk.js"
   },
   {
     "revision": "bb37c92be89cb251acf6d014a70b0132",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/timeformat/static/media/Sun-19_moon-19.a9ee3423.png"
   },
   {
-    "revision": "0febfee440ff06d31abbe8743d89c0bd",
+    "revision": "5ecf11771c12c9671372307e14d6850e",
     "url": "/timeformat/index.html"
   }
 ];
