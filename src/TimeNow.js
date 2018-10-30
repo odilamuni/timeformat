@@ -146,8 +146,10 @@ onStepDown(){
 
 onChangeType(type){
     this.setState(
-      {hourType: type},
-      // ()=>console.log('Hour type '+ this.state.hourType)
+      {
+        hourType: type,
+        userInput: 1
+      },
       );
 }
 
